@@ -37,12 +37,16 @@ void lineSegment(void) {
 	//Cria a linha na tela. Observe que o trecho abaixo é o que efetivamente determina o desenho
 	//que será gerado. Aqui podem-se utilizar loops ou chamar subrotinas para tarefas recorrentes.
 	glBegin(GL_LINES);
+	//inicio da linha 01
 	glVertex2i(0, 0);
 	glVertex2i(200, 200);
+	//inicio da linha 02
 	glVertex2i(200, 0);
 	glVertex2i(0, 200);
+	//inicio da linha 03
 	glVertex2i(100, 0);
 	glVertex2i(100, 200);
+	//inicio da linha 04
 	glVertex2i(200, 100);
 	glVertex2i(0, 100);
 	glEnd();
