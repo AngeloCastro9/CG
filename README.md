@@ -1,3 +1,3 @@
 # Computa-o_Gr-fica
 
-Introdução à computa~çao gráfica.
+Introdução à computação gráfica.
