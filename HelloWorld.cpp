@@ -20,7 +20,7 @@ void init(void) {
 	// e a "y" de 0 a 150. Dessa forma, define-se a coordenada "lower left-corner" para 0 e 0 e a "upper right-corner"
 	// para 200 e 150, respectivamente x e y.
 	glMatrixMode(GL_PROJECTION);
-	gluOrtho2D(0, 200, 0, 200);
+	gluOrtho2D(0, 200, 0, 150);
 
 }
 
@@ -39,16 +39,16 @@ void lineSegment(void) {
 	glBegin(GL_LINES);
 	//inicio da linha 01
 	glVertex2i(0, 0);
-	glVertex2i(200, 200);
+	glVertex2i(200, 150);
 	//inicio da linha 02
 	glVertex2i(200, 0);
-	glVertex2i(0, 200);
+	glVertex2i(0, 150);
 	//inicio da linha 03
 	glVertex2i(100, 0);
 	glVertex2i(100, 200);
 	//inicio da linha 04
-	glVertex2i(200, 100);
-	glVertex2i(0, 100);
+	glVertex2i(200, 75);
+	glVertex2i(0, 75);
 	glEnd();
 
 	// Força a execução das funções OpenGL utlizadas no programa, que são armazenadas pelo SO em "buffers"
