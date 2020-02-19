@@ -39,8 +39,13 @@ void lineSegment(void) {
 	glBegin(GL_LINES);
 	glVertex2i(0, 0);
 	glVertex2i(200, 200);
+	glVertex2i(200, 0);
+	glVertex2i(0, 200);
+	glVertex2i(100, 0);
+	glVertex2i(100, 200);
+	glVertex2i(200, 100);
+	glVertex2i(0, 100);
 	glEnd();
-
 
 	// Força a execução das funções OpenGL utlizadas no programa, que são armazenadas pelo SO em "buffers"
 	// que se encontram em diferentes locais do sistema, dependnendo de como o OpenGL foi implementado.
