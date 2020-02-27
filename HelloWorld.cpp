@@ -33,22 +33,31 @@ void lineSegment(void) {
 	glClear(GL_COLOR_BUFFER_BIT);
 	// Configura esquema de cor para os objetos que se que mostrar em tela. No exemplo abaixo, deseja-se 
 	// setar a cor do objeto para verde escuro. o "f" indica que são valore de ponto flutuande ("float")
-	glColor3f(0, 0.4, 0.2);
+	glColor3f(0, 0.1, 0.6);
 	//Cria a linha na tela. Observe que o trecho abaixo é o que efetivamente determina o desenho
 	//que será gerado. Aqui podem-se utilizar loops ou chamar subrotinas para tarefas recorrentes.
 	glBegin(GL_LINES);
-	//inicio da linha 01
-	glVertex2i(0, 0);
-	glVertex2i(200, 150);
 	//inicio da linha 02
-	glVertex2i(200, 0);
-	glVertex2i(0, 150);
+	int k1 = 10;
+	glVertex2i(180, 10);
+	glVertex2i(k1, 145);
 	//inicio da linha 03
-	glVertex2i(100, 0);
-	glVertex2i(100, 200);
+	glVertex2i(180, 10);
+	glVertex2i(180, 145);
 	//inicio da linha 04
-	glVertex2i(200, 75);
-	glVertex2i(0, 75);
+	glVertex2i(180, 145);
+	glVertex2i(10, 145);
+
+	//for (int k = 1, k <= 100; k = k + 1) {
+
+	//}
+
+	while (k1 < 180) {
+		k1++;
+		glVertex2i(180, 10);
+		glVertex2i(k1, 145);
+	}
+
 	glEnd();
 
 	// Força a execução das funções OpenGL utlizadas no programa, que são armazenadas pelo SO em "buffers"
