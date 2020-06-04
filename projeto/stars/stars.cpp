@@ -87,10 +87,7 @@ void gerarContornoDaEstrela(GLsizei ladoPontaLateral, GLsizei tamanhoDaPonta) {
 void gerarEstrela(GLsizei ladoPontaLateral, GLsizei tamanhoDaPonta, GLuint wTamPad) {
 
 	// Cor do polígono interno
-	float n1 = rand() % 2;
-	float n2 = rand() % 2;
-	float n3 = rand() % 2;
-	glColor3f(n1, n2, n3);
+	glColor3f((float)rand() / (float)RAND_MAX, (float)rand() / (float)RAND_MAX, (float)rand() / (float)RAND_MAX);
 	glPolygonMode(GL_FRONT, GL_FILL);
 
 	// 	Carregar coordenadas e desenhar polígono interno
